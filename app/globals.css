@@ -2,25 +2,49 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --primary: #8b5a3c;
+  --third: #8b5a3c;
 }
 
 @theme inline {
   --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: var(--primary);
+  --color-third: var(--third);
+  --font-cormorant: "Cormorant Garamond", serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Custom header class */
+.vintage-header {
+  font-family: var(--font-cormorant);
+  font-size: clamp(1.5rem, 5vw, 2.2rem);
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0.125em;
+  text-transform: capitalize;
+  color: var(--color-primary);
 }
 
+/* Reusable link style */
+.nav-link {
+  color: var(--color-third);
+  text-underline-offset: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  text-decoration-color: #8b5a3c;
+}
+@import "tailwindcss";
+
+/* Basic Reset */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: sans-serif;
 }
+
+/* Ensure font-serif (Cormorant Garamond) is loaded via Google Fonts in your layout.js */
