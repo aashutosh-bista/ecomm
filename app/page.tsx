@@ -1,8 +1,11 @@
-import Navbar from "./navbar/Navbar";
+import Navbar from "@/component/Navbar";
+
 export default function Home() {
   return (
     <div>
-      <Navbar />
+       
+     herosection
+     card
     
     </div>
   );
