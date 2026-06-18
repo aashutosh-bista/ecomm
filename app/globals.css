@@ -13,16 +13,6 @@
   --font-cormorant: "Cormorant Garamond", serif;
 }
 
-/* Custom header class */
-.vintage-header {
-  font-family: var(--font-cormorant);
-  font-size: clamp(1.5rem, 5vw, 2.2rem);
-  font-weight: 400;
-  font-style: italic;
-  letter-spacing: 0.125em;
-  text-transform: capitalize;
-  color: var(--color-primary);
-}
 
 /* Reusable link style */
 .nav-link {

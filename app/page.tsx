@@ -1,12 +1,9 @@
-import Navbar from "@/component/Navbar";
 
+import ProductGrid from "@/component/ProductGrid";
 export default function Home() {
   return (
     <div>
-       
-     herosection
-     card
-    
+      <ProductGrid />
     </div>
   );
 }
